@@ -10,6 +10,10 @@ body {
     background: #ffffff;
     margin: 0 auto;
     padding: 0 20px;
+    background-image: url('img/gold_splatter_new.webp');
+    background-position: top right 25%;
+    background-repeat: no-repeat;
+    background-size: 40%;
 }
 
 /* Navigation design */
@@ -21,15 +25,17 @@ nav {
     font-size: 1.2em;
 }
 
-nav .nav a {
-    display: inline-block;
+nav div:first-of-type {
+    display: flex;
+}
+nav div:first-of-type a {
     padding: 15px 25px;
     text-decoration: none;
     color: #2d2c70;
     font-weight: 500;
 }
 
-nav .nav a:first-child {
+nav div:first-of-type a:first-child {
     color: #8281bd;
 }
 
@@ -41,7 +47,7 @@ nav .nav a:first-child {
     background: #3a79dd;
     color: #ffffff;
     overflow: hidden;
-    box-shadow: 0px 40px 60px -12px #4e87e4;
+    box-shadow: 0px 30px 40px -15px #4e87e4;
 }
 
 .contact_me_btn a:after {
@@ -111,8 +117,7 @@ section.services {
     display: grid;
     grid-template-columns: 1.4fr 1fr;
     gap: 40px;
-    margin-right: 50px;
-    margin-top: 120px;
+    margin-top: 130px;
     margin-bottom: 50px;
     
 }
@@ -125,6 +130,11 @@ section.services img {
     padding: 20px;
 }
 
+.services_header p {
+    padding-bottom: 20px;
+    line-height: 2em;
+}
+
 .services_header h2 {
     font-size: 1.8em;
     font-weight: 600;
@@ -133,27 +143,59 @@ section.services img {
     color: #ecb351;
 }
 
-.services .cards {
+.cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
 }
 
-.services .cards div {
+.cards div {
     text-align: center;
-    padding: 20px;
+    padding: 15px;
     border: 1px solid #ececf0;
 }
 
-.services .cards div:first-child {
-    box-shadow: 0px 135px 78px -15px #c5d5ee;
+.cards div:first-child {
+    box-shadow: 0px 130px 78px -15px #c5d5ee;
     border: none;
     position: relative;
-    top: -120px;
+    top: -100px;
 }
 
-.services .cards div:nth-child(3) {
+.cards div:nth-child(3) {
     border-top: none;
     position: relative;
     top: -120px;
 } 
+
+.cards h3 {
+    color: #31307c;
+    font-weight: 600;
+}
+
+.cards p {
+    font-size: 0.8em;
+    color: #6a6a75
+}
+
+/* Skills section styling */
+section.skills {
+    max-width: 800px;
+    margin: 60px auto;
+    display: flex;
+    justify-content: space-around;
+    /* padding:20px; */
+    border-radius: 5px;
+    box-shadow: 0px 0px 12px 15px rgba(0, 0, 0, 0.08)
+}
+.skills img {
+    max-width: 40px;
+    padding: 20px;
+}
+
+.skills > h3 {
+    align-self: center;
+    color:#e2a437;
+    letter-spacing: 0.6em;
+}
+
