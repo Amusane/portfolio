@@ -112,7 +112,7 @@ header {
     max-height: 36px;
 }
 
-/* Services section style */
+/* Services section styling */
 section.services {
     display: grid;
     grid-template-columns: 1.4fr 1fr;
