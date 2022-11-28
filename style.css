@@ -3,6 +3,7 @@
 body {
     font-family: 'Poppins';
     margin: 0;
+    color: #6a6a75
 }
 
 .container {
@@ -138,8 +139,9 @@ section.services img {
 .services_header h2 {
     font-size: 1.8em;
     font-weight: 600;
+    color: #31307c;
 }
-.services_header h2 span {
+.services_header h2 span, .skills_extend h3 span, .contact h3 span {
     color: #ecb351;
 }
 
@@ -175,7 +177,6 @@ section.services img {
 
 .cards p {
     font-size: 0.8em;
-    color: #6a6a75
 }
 
 /* Skills section styling */
@@ -199,3 +200,195 @@ section.skills {
     letter-spacing: 0.6em;
 }
 
+/* Styling skills extend(Why you choose me section) */
+.skills_extend {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+
+}
+
+.skills_extend > div:first-of-type {
+    grid-column: span 2;
+    text-align: center;
+}
+
+.skills_extend h3, .contact h3 {
+    font-size: 2em;
+    color: #31307c;
+    margin: 30px 0;
+}
+
+.skills_extend .professional_skills {
+    justify-self: left;
+}
+
+.skills_extend .bars .bar {
+    width: 90%;
+    height: 20px;
+    background: lightgrey;
+    border-radius: 9px;
+    margin: 10px 0;
+}
+
+.skills_extend h4 {
+    color: #31307c;
+    font-size: 1.2em;
+}
+
+.skills_extend .bars p {
+    height: 100%;
+    border-radius: 9px;
+}
+.skills_extend .bars .figma p {
+    width: 80%;
+    background: #5755a7;
+}
+.skills_extend .bars .xd p {
+    width: 90%;
+    background:#c28926;
+}
+.skills_extend .bars .bluelight p {
+    width: 75%;
+    background: rgb(99, 183, 211);
+}
+.skills_extend .bars .bluelight p {
+    width: 75%;
+    background: rgb(99, 183, 211);
+}
+.skills_extend .bars .pink p {
+    width: 85%;
+    background: rgb(228, 143, 158);
+}
+.skills_extend .bars .green p {
+    width: 92%;
+    background: rgb(85, 155, 85);
+}
+
+.skills_cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 60px;
+}
+
+.skills_cards .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+    width: 100%;
+}
+
+.skills_cards .card:nth-child(2){
+    position: relative;
+    left: 20px;
+    top: 20px;
+}
+.skills_cards .card:nth-child(3){
+    position: relative;
+    left: 20px;
+    top: 20px;
+}
+.skills_cards .card:nth-child(4){
+    position: relative;
+    left: 40px;
+    top: 40px;
+}
+
+.circular_progress {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    background: conic-gradient(#5755a7 3.6deg, #ededed 0deg );
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circular_progress::before {
+    content: "";
+    width: 100px;
+    height: 100px;
+    background: #ffffff;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.circular_value {
+    position: relative;
+    font-size: 2.1em;
+    color: #31307c;
+}
+
+.circular_progress.html_css {
+    background: conic-gradient(#c28926 306deg, #ededed 0deg );
+}
+.circular_progress.javascript {
+    background: conic-gradient(#7978ca 252deg, #ededed 0deg );
+}
+.circular_progress.php {
+    background: conic-gradient(lightblue 288deg, #ededed 0deg );
+}
+.circular_progress.html_css {
+    background: conic-gradient(#c28926 306deg, #ededed 0deg );
+}
+.circular_progress.mysql {
+    background: conic-gradient(rgb(94, 163, 94) 342deg, #ededed 0deg );
+}
+
+/* Styling the contact section */
+
+.contact {
+    margin: 100px auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+.contact form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    gap: 20px;
+}
+
+form input[type="text"] {
+    background: rgb(243, 241, 241);
+    border: none;
+    padding: 20px 35px;
+    border-radius: 15px;
+    font-size: 1.02em;
+}
+form input[type="text"]:focus {
+    background: #ffffff;
+}
+
+form textarea {
+    grid-column: span 2;
+    padding: 20px 35px;
+    border: none;
+    background: rgb(243, 241, 241);
+}
+form textarea:focus {
+    background: #ffffff;
+}
+
+form textarea::placeholder {
+    font-size: 1.3em;
+}
+
+form button {
+    padding: 20px 35px;
+    max-width: 60%;
+    border-radius: 5px;
+    background: #3a79dd;
+    border: 1px solid #295fb6;
+    color: #ffffff;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+form button:hover {
+    background: #225ab4;
+
+}
