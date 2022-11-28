@@ -296,6 +296,10 @@ section.skills {
     top: 40px;
 }
 
+.skills_cards .card span {
+    margin-top: 5px;
+    color: #31307c;
+}
 .circular_progress {
     position: relative;
     width: 120px;
