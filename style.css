@@ -493,16 +493,24 @@ footer div:first-child h4 {
         grid-column: span 2;
     }
 
-    .skills_extend .professional_skills {
-    }
     .skills_cards .card {
         position: static  !important;
     }
 
+    .circular_progress {
+        width: 150px;
+        height: 150px;
+    }
+
+    .circular_progress::before {
+        width: 130px;
+        height: 130px;
+    }
+
     form button {
-        font-size: 0.9em;
-        max-width: 40%;
-        padding: 10px 5px;
+        font-size: 1.1em;
+        max-width: 50%;
+        padding: 13px 8px;
     }
 
 }
@@ -603,8 +611,11 @@ footer div:first-child h4 {
         font-size: 0.8em;
     }
     
+    footer {
+        grid-template-columns: 1fr 1fr;
+    }
     footer div:nth-of-type(4) {
-        grid-column: span 3;
+        grid-column: span 2;
         justify-self: center;
         text-align: center;
     }
