@@ -515,6 +515,7 @@ footer div:first-child h4 {
     .container > div {
         padding-left: 20px;
         padding-right: 20px;
+        box-sizing: border-box;
     }
     nav {
         flex-direction: column;
@@ -536,6 +537,88 @@ footer div:first-child h4 {
     
 }
 
-@media screen and (max-width: 550px){
+@media screen and (max-width: 575px){
+    nav div:first-of-type a {
+        padding: 15px 8px;
+    }
+
+    .info {
+        grid-column: span 2;
+    }
+
+    .info h2:first-child {
+        font-size: 1.7em;
+    }
+    .info h2:last-of-type {
+        font-size: 1.5em;
+    }
+
+    .info_img {
+        grid-column: span 2;
+    }
+
+    section.services {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+    .services .cards {
+        grid-column: span 2;
+        /* grid-row: span 1; */
+    }
+    .services .services_header {
+        grid-column: span 2;
+        grid-row: 1;
+    }
+    .services .skills {
+        grid-column: span 2;
+        padding: 10px;
+        /* grid-row: span 1; */
+    }
+    .services .skills img {
+        max-width: 35%;
+        padding: 10px;
+    }
+
+    form input[type="text"] {
+        grid-column: span 2;
+    }
+    form button {
+        grid-column: span 2;
+        max-width: 100%;
+    }
+
+    .circular_progress {
+        width: 60px;
+        height: 60px;
+    }
+
+    .circular_progress::before {
+        width: 45px;
+        height: 45px;
+    }
+
+    .circular_value {
+        font-size: 0.8em;
+    }
+    
+    footer div:nth-of-type(4) {
+        grid-column: span 3;
+        justify-self: center;
+        text-align: center;
+    }
+
+    footer > p {
+        padding-bottom: 10px;
+    }
+
+    .skills_cards .card {
+        padding: 15px 10px;
+    }
+
+    .skills_cards .card span {
+        font-size: 1em;
+    }
     
 }
