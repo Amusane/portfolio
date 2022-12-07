@@ -465,9 +465,7 @@ footer div:first-child h4 {
         grid-template-columns: 1fr;
         grid-row: span 2;
     }
-    .services .cards div {
-        position: static;
-    }
+    
     .cards div:nth-child(3) {
         border-top: none;
         grid-row: 2;
@@ -495,24 +493,7 @@ footer div:first-child h4 {
         padding: 0;
     }
 
-    .skills_extend .bars {
-        grid-column: span 2;
-    }
-
-    .skills_cards .card {
-        position: static  !important;
-    }
-
-    .circular_progress {
-        width: 150px;
-        height: 150px;
-    }
-
-    .circular_progress::before {
-        width: 130px;
-        height: 130px;
-    }
-
+   
     form button {
         font-size: 1.1em;
         max-width: 50%;
@@ -547,6 +528,14 @@ footer div:first-child h4 {
     }
     footer > p {
         grid-column: span 3;
+    }
+
+    .skills_extend .professional_skills {
+        grid-column: span 2;
+    }
+
+    .bars {
+        grid-column: span 2;
     }
     
 }
@@ -595,6 +584,9 @@ footer div:first-child h4 {
         padding: 10px;
     }
 
+    .professional_skills {
+        grid-column: span 2;
+    }
     form input[type="text"] {
         grid-column: span 2;
     }
