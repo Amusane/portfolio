@@ -222,7 +222,8 @@ section.services img {
 
 
 .skills_extend .professional_skills {
-    justify-self: left;
+    /* justify-self: left; */
+    
 }
 
 .skills_extend .bars span {
@@ -277,7 +278,8 @@ section.services img {
 .skills_cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 30px 50px;
+    /* gap: 30px 50px; */
+    justify-items: center;
 }
 
 .skills_cards .card {
@@ -285,25 +287,29 @@ section.services img {
     flex-direction: column;
     align-items: center;
     padding: 10px 20px;
+    box-sizing: border-box;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
-    width: 100%;
+    width: 80%;
+    margin-bottom: 20px;
 }
 
 .skills_cards .card:nth-child(2){
     position: relative;
-    left: 20px;
-    top: 10px;
+    top: 15px;
+    justify-self: left;
 }
 
 .skills_cards .card:nth-child(3){
     position: relative;
-    left: 10px;
+    /* left: 10px; */
 }
 
 .skills_cards .card:nth-child(4){
     position: relative;
-    left: 30px;
-    top: 10px;
+    /* left: 30px;
+    top: 10px; */
+    justify-self: left;
+    top: 15px;
 } 
 
 .skills_cards .card span {
