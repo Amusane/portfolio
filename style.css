@@ -465,10 +465,13 @@ footer div:first-child h4 {
         grid-template-columns: 1fr;
         grid-row: span 2;
     }
-    
+    .cards div:first-child {
+        top: 0px;
+    }
     .cards div:nth-child(3) {
         border-top: none;
         grid-row: 2;
+        top: 0px;
     } 
     
     .skills {
