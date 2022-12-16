@@ -509,6 +509,11 @@ footer div:first-child h4 {
     .container {
         padding: 0;
     }
+    
+    nav div:nth-of-type(2){
+        display: none;
+    }
+    
     .container > section, .container > header, .container > nav, #contact,
     .container > div {
         padding-left: 20px;
