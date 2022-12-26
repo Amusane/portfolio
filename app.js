@@ -22,3 +22,67 @@ function progressCircle(percentage,selector,color,speed){
     },theSpeed);
     
 }
+
+let form = document.forms['contact_form'];
+
+form.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    let name = form.querySelector('#name');
+    let email = form.querySelector('#email');
+    let message = form.querySelector('#message');
+    
+    
+    if(e.target.tagName === 'BUTTON'){
+        
+        const validEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+        let errors = false;
+        if(email.value == '')
+        {
+            email.placeholder = 'Please enter an email';
+            email.classList.add('error');
+            email.focus();
+            errors = true;
+        }else if(!email.value.match(validEmail))
+        {
+            email.placeholder = 'Please enter a valid email';
+            email.classList.add('error');
+            email.focus();
+            errors = true;
+        }
+
+        if(message.value == ''){
+            message.placeholder = 'Sorry, this field cannot be empty';
+            message.classList.add('error');
+            errors = true;
+        }else if(message.value.length < 5) {
+            message.value = '';
+            message.placeholder = 'Sorry, no enough characters for a propper message';
+            message.classList.add('error');
+            errors = true;
+        }
+
+        if(errors === false){
+            sendEmail(name.value,email.value,message.value);
+            name.value = '';
+            email.value = '';
+            message.value = '';
+            email.classList.remove('error');
+            email.placeholder = 'Your Email';
+            message.classList.remove('error');
+            message.placeholder = 'Your Message';
+        }
+    }
+});
+
+function sendEmail(name,email,message){
+    let emailProps = {
+        from_name: name + ' \n' + email,
+        to_name: 'Meme',
+        message: 'Message: \n' + message
+    }
+
+    emailjs.send('service_pzggdba', 'template_2v3di95', emailProps, 'Z3Cn8sTh15CNQb0Dv').then((response) => {
+        console.log(response.status);
+    });
+}

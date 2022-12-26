@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="app.js" type="module"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("Z3Cn8sTh15CNQb0Dv");
+        })();
+    </script>
     <title>Portfolio</title>
 </head>
 <body>
@@ -137,11 +144,11 @@
         <div class="contact" id="contact">
             <h3>GET IN TOUCH <span>WITH ME</span></h3>
             <p>Lorem ipsum dolor sit amet, quidem praesentium consequatur sint error itaque at vel minus?</p>
-            <form action="">
-                <input type="text" placeholder="Your Name">
-                <input type="text" placeholder="Your Email">
-                <textarea cols="30" rows="10" placeholder="Your Message"></textarea>
-                <button type="button" value="submit">SEND MESSAGE</button>
+            <form action="" id="contact_form">
+                <input type="text" name="name" id="name" placeholder="Your Name">
+                <input type="text" name="email" id="email" placeholder="Your Email">
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <button type="submit" value="submit">SEND MESSAGE</button>
             </form>
         </div>
         <!-- <div class="bottom_banner">

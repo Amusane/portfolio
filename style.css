@@ -455,6 +455,15 @@ footer div:first-child h4 {
     font-weight: 700;
 }
 
+/* Form input errors */
+.error {
+    border: solid 1px rgb(167, 24, 24) !important;
+}
+
+.error::placeholder {
+    color: rgb(167, 24, 24);
+}
+
 /* Responsive */
 @media screen and (max-width: 900px){
     section.services {
