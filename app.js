@@ -1,4 +1,4 @@
-progressCircle(85,'.circular_progress.html_css','#c28926',50)
+progressCircle(85,'.circular_progress.html_css','#c28926',30)
 progressCircle(70,'.circular_progress.javascript','#7978ca',30)
 progressCircle(80,'.circular_progress.php','lightblue',30)
 progressCircle(95,'.circular_progress.mysql','rgb(94, 163, 94)',30)
