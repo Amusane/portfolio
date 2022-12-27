@@ -464,6 +464,12 @@ footer div:first-child h4 {
     color: rgb(167, 24, 24);
 }
 
+/* From success message */
+.message {
+    color: green;
+    font-size: 1.2em;
+    font-weight: 500;
+}
 /* Responsive */
 @media screen and (max-width: 900px){
     section.services {

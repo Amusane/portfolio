@@ -84,5 +84,22 @@ function sendEmail(name,email,message){
 
     emailjs.send('service_pzggdba', 'template_2v3di95', emailProps, 'Z3Cn8sTh15CNQb0Dv').then((response) => {
         console.log(response.status);
+        
+        const myText = 'Thank you. Will get in touch with you soon';
+        let stopWriting = 0;
+        let change = document.querySelector('#form_description');
+            change.innerHTML = '';
+            change.classList.add('message');
+        let theInterval = setInterval(() => {
+
+            if(stopWriting == (myText.length - 1)) {clearInterval(theInterval)}
+            
+            change.innerHTML += myText[stopWriting];
+
+            console.log(myText[stopWriting]);
+
+            stopWriting++
+        },50);
+
     });
 }
